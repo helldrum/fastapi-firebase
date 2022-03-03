@@ -8,9 +8,9 @@ uvicorn = "*"
 fastapi = "*"
 pydantic = {extras = ["email"], version = "*"}
 firebase-admin = "*"
+google-cloud-storage = "*"
 
 [dev-packages]
 
 [requires]
 python_version = "3.9"
-

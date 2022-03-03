@@ -42,3 +42,16 @@ class UserChangePasswordSchema(BaseModel):
                 "new_password": "new_password",
             }
         }
+
+
+class BlogPostSchema(BaseModel):
+    post: str = Field(...)
+    title: str = Field(...)
+
+    class Config:
+        schema_extra = {
+            "example": {
+                "post": "hello there and welcome to my blog !",
+                "title": "first post",
+            }
+        }
